@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Assessment</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Question 1: Student Grading System</h2>
+            <p>Enter student details and subject scores.</p>
+
+            <form id="studentForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+
+                <input type="number" id="mathematics" placeholder="Mathematics" min="0" max="100" step="1" required>
+                <input type="number" id="english" placeholder="English" min="0" max="100" step="1" required>
+                <input type="number" id="computerStudies" placeholder="Computer Studies" min="0" max="100" step="1" required>
+
+                <button type="submit">Calculate Result</button>
+            </form>
+
+            <div id="result" style="display: none;" aria-live="polite"></div>
+        </section>
+
+        <section>
+            <h2>Question 2: FizzBuzz Challenge</h2>
+            <p>Click the button to count from 1 to 100.</p>
+
+            <button id="runFizzBuzz" type="button">Run FizzBuzz</button>
+
+            <div id="fizzBuzzResults"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>JavaScript Assessment Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
